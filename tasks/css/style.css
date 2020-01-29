@@ -1,0 +1,49 @@
+:root {
+  --main-font: ;
+  --main-color: #35c086;
+  --link-color: #158a8c;
+  --change-link-color: #35c086;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+body {
+  color: var(--main-color);
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+}
+
+.task__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.link {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+.link:hover,
+.link:focus {
+  color: var(--change-link-color);
+}
+
+.repo__link:before {  
+  content: "";
+  background-image: url(../images/github-logo.png);
+  background-size: cover;
+  height: 30px;
+  width: 30px;
+  margin-right: 5px;
+  display: inline-block;
+  vertical-align: middle;
+}

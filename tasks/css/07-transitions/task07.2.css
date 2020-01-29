@@ -1,0 +1,48 @@
+:root {
+  --first-color: #fbf281;
+  --second-color: #b8e986;
+}
+
+@media screen and (min-width: 479px) and (max-width: 767px) {
+  .container {
+    max-width: 767px;
+    height: 100vh;
+  }
+
+  .content {
+    background-color: var(--first-color);
+    margin: 0 auto;
+    width: 50%;
+    height: 50%;
+  }
+
+  .sidebar {
+    background-color: var(--second-color);
+    margin: 0 auto;
+    width: 50%;
+    height: 50%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .content {
+    background-color: var(--first-color);
+    margin: 0 auto;
+    width: 75%;
+    height: 100%;
+  }
+
+  .sidebar {
+    background-color: var(--second-color);
+    margin: 0 auto;
+    width: 25%;
+    height: 100%;
+  }
+}

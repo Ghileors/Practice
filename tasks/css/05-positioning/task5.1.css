@@ -1,0 +1,11 @@
+
+.link::before {  
+    content: "";
+    background-image: url(/tasks/images/download.png);
+    background-size: cover;
+    height: 20px;
+    width: 20px;
+    margin-right: 5px;
+    display: inline-block;
+    vertical-align: middle;
+}

@@ -1,0 +1,80 @@
+:root {
+  --first-color: #f95e40;
+  --second-color: #00a672;
+  --third-color: #2f97de;
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .wrapper {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .red {
+    background-color: var(--first-color);
+    margin: 0 auto;
+    width: 50%;
+    height: 40%;
+    margin-bottom: 10px;
+  }
+
+  .green {
+    background-color: var(--second-color);
+    margin: 0 auto;
+    width: 50%;
+    height: 40%;
+    margin-bottom: 10px;
+  }
+
+  .blue {
+    background-color: var(--third-color);
+    margin: 0 auto;
+    width: 50%;
+    height: 20%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: 100vh;
+  }
+
+  .red {
+    background-color: var(--first-color);
+    margin: 0 auto;
+    width: 50%;
+    height: 40%;
+    margin-bottom: 10px;
+  }
+
+  .green {
+    background-color: var(--second-color);
+    flex-grow: 0;
+    flex-basis: calc(100% / 2 - 10px);
+    height: 40%;
+    margin-right: 20px;
+  }
+
+  .blue {
+    background-color: var(--third-color);
+    flex-grow: 0;
+    flex-basis: calc(100% / 2 - 10px);
+    height: 40%;
+  }
+}

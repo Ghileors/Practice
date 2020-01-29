@@ -1,0 +1,12 @@
+
+.box {
+    height: 100vh;
+    background-image: linear-gradient(
+        to bottom right,
+        rgba(0, 0, 0, 0.3),
+        rgba(0, 0, 0, 0.3)
+      ),
+      url(/tasks/images/bird.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}

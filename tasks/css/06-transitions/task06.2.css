@@ -1,0 +1,27 @@
+.contaiver {
+    position: relative;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+.button {
+    content: "";
+    position: absolute;
+    color: #ffffff;
+    background-color: #1976d2;
+    width: 120px;
+    height: 40px;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: 250ms;
+}
+
+.button:hover {
+    background-color: #115293;    
+}

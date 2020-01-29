@@ -1,0 +1,21 @@
+:root {
+  --first-color: #ff4081;
+  --second-color: #ff9800;
+  --third-color: #4caf50;
+}
+
+.list__item:nth-last-child(3n + 3) {
+  background-color: var(--first-color);
+}
+
+.list__item:nth-last-child(3n + 2) {
+  background-color: var(--second-color);
+}
+
+.list__item:nth-last-child(3n - 2) {
+  background-color: var(--third-color);
+}
+
+.list__item:not(:first-child) {
+  margin-top: 10px;
+}
