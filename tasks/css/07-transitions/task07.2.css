@@ -3,7 +3,13 @@
   --second-color: #b8e986;
 }
 
-@media screen and (min-width: 479px) and (max-width: 767px) {
+@media screen and (max-width: 489px) {
+  .container {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .container {
     max-width: 767px;
     height: 100vh;
